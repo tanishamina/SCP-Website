@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    color: #131313;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fdf7f7 url('../BackgroundImage/scp002img.jpg') no-repeat center/cover;
+}
+
+h1, h2, h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    color: #fdf7f7;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h2, h3 {
+    color: #060606;
+    font-size: 24px;
+}
+
+/* Additional media query to handle responsiveness */
+@media screen and (max-width: 600px) {
+    .Outside {
+        flex-direction: column;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .image img {
+        height: 150px;
+        width: 50px;
+    }
+}
+
+
+b {
+    color: #292928;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Outside {
+    height: 66px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #282626;
+    gap: 10px;
+}
+
+nav {
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #402525;
+    border-radius: 4px;
+}
+
+nav ul {
+    padding-left: 20px;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+    display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
+    nav ul li {
+        display: block;
+    }
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #908c8c;
+    color: white;
+}
+
+.container2 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2px;
+}
+
+@media screen and (max-width:768px){
+    .container2 {
+        flex-direction: column;
+    }
+
+}
+
+.container2 img {
+    width: 30%;
+    height: 270px;
+    display: block;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 768px ) {
+    .container2 img{
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+
+#ulList {
+    width: 70%;
+    padding: 20px 4px 0 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5b2e2e;
+    color: #fff;
+    border-radius: 0.7rem;
+}
+
+@media screen and (max-width:768px){
+    #ulList{
+        width: 100%;
+    }
+
+}
+
+#contentBox {
+    width: 80%;
+    height: 100%;
+    margin: auto 0 25px;
+    padding: 20px;
+    background-color: #d2cdcd;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width:768px){
+    #contentBox{
+        width: 90%;
+    }
+
+}
+
+
+
+
+#contentBox h2, #contentBox h3, #contentBox h4 {
+    margin-bottom: 10px;
+    color: #3b3a3a;
+}
+
+#contentBox img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+#contentBox ul {
+    margin-bottom: 20px;
+    padding-left: 25px;
+}
+
+#contentBox ul li {
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+#contentBox p {
+    margin-bottom: 10px;
+}
+
+#contentBox p code {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: block;
+    max-width: 100%;
+    overflow: auto;
+    padding: 10px;
+    background-color: #8f7a7a;
+    line-height: 1.4;
+}
+
+dl h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+dd {
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #afa6a6;
+}
+
+#inF1, #inF2, a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 35px;
+    color: black;
+    text-decoration: none;
+    font-size: medium;
+    background-color: rgb(180, 146, 103);
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 600px) {
+    .Outside {
+        height: auto;
+        flex-direction: column;
+    }
+
+    h1 {
+        margin: 10px 0;
+        font-size: 20px;
+    }
+
+    nav ul li {
+        display: block;
+    }
+}

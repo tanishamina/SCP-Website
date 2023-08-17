@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensuring full page height */
+    background-image: url('../BackgroundImage/scp002img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.auth-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 40px 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600; /* Making labels a bit bold */
+    color: #4e2929; /* Matching the color scheme */
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Rounded borders */
+    margin-bottom: 20px; /* Space between fields */
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #928989;
+    color: #101010;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 5px; /* Matching rounded corners */
+    font-weight: 600; /* Bold text */
+}
+
+
+
+a {
+    color: #4e2929; /* Matching color scheme */
+    text-decoration: none;
+    font-weight: 600; /* Making link text a bit bold */
+}
+
+#MP {
+    height: 50px;
+    width: 80px;
+    background-color: #9f9c98;
+    border: none; /* Removing border */
+    border-radius: 10px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #121111; /* White text for button */
+    cursor: pointer; /* Hand cursor for clickable elements */
+    text-align: center;
+}
+
+#MP:hover {
+    background-color: #db8246;
+    text-decoration: none;
+    color: #f4f4f4;
+}
+#togglePassword {
+    font-size: 12px;
+    color: #4e2929;
+    margin-left: 0px;
+    cursor: pointer; /* Hand cursor to indicate clickable element */
+    font-weight: 600; /* Making text a bit bold */
+    text-decoration: none;
+}
+
+#togglePassword:hover {
+    color: #ec8319; /* Color when hovered */
+    text-decoration: none;
+}
+

@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 5px;
+    background-image: url('../images/SCP-Wall.jpg');
+    border-radius: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+header {
+    height: 200px;
+    width: auto;
+    padding: 20px;
+    margin-bottom: 2px;
+    margin-top: 5px;
+    background-image: url('../images/SCP-Wall.jpg');
+    color: #fff;
+    border-radius: 10px;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;/*Allows child elements to wrap to the next line*/
+    text-shadow: 5px 5px black;
+}
+
+.header-img img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    box-sizing: border-box;
+    border-radius: 20px;
+   
+}
+
+@media screen and (max-width: 768px) {
+    .header-img img {
+        height: 100px;
+        width: 100px;
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: auto; /* Adapting height for smaller screens */
+        padding: 10px;
+        width: auto;
+      }
+
+}
+
+.img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: rgb(170, 170, 170);
+    border-radius: 5px;
+}
+
+.img-container div {
+    flex-basis: calc(20% - 10px);
+    margin: 5px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 200px;
+    transition: transform 0.3s ease;
+}
+
+.img-container img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    .img-container div {
+        flex-basis: calc(50% - 10px);
+    }
+
+    .img-container img {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .img-container div {
+     
+        flex-basis: calc(100% - 10px);
+    }
+
+    .img-container img {
+       
+        height: 100px;
+    }
+}
+
+
+
+.Footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #6c6a6a;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 2px;
+    font-size: 20px;
+   
+    
+
+}
+
+.Footer a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    text-shadow: 1.5px 1.5px rgb(63, 62, 62);
+    
+}
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+

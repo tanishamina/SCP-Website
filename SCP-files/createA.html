@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="css/createA.css">
+</head>
+<body>
+    <div class="auth-container">
+        <h2>Create Account</h2>
+        <form action="/your-create-account-endpoint" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <span id="togglePassword" style="cursor:pointer;">Password show</span>
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm_password" required>
+            <button type="submit">Create Account</button>
+        </form>
+        <p>Already have an account? <a href="signI.html">Sign In</a></p>
+        
+    </div>
+    <div id="MP">
+        <p><a href="index.html">Go to Main Page</a></p>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        document.getElementById('togglePassword').addEventListener('click', function() {
+            var passwordInput = document.getElementById('password');
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                this.textContent = "Hide";
+            } else {
+                passwordInput.type = "password";
+                this.textContent = "Password Show";
+            }
+        });
+    </script>
+    
+</body>
+</html>

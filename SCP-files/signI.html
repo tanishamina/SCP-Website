@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Page</title>
+    <link rel="stylesheet" href="css/createA.css">
+</head>
+<body>
+    <div class="auth-container">
+        <h2>Sign In</h2>
+        <form action="/your-signin-endpoint" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <span id="togglePassword" style="cursor: pointer;">Show Password</span>
+            <button type="submit">Sign In</button>
+        </form>
+        <p>Don't have an account? <a href="createA.html">Create Account</a></p>
+        
+    </div>
+    <div id="MP">
+        <p><a href="index.html">Go to Main Page</a></p>
+    </div>
+    <!-- JavaScript -->
+    <script>
+        document.getElementById('togglePassword').addEventListener('click',function(){
+            var x = document.getElementById("password");
+            if (x.type === "password") {
+                x.type = "text";
+                this.textContent = "Hide";
+                } else{
+                    x.type = "password";
+                    this.textContent = "Show Password";
+                }
+        });
+    </script>
+    
+</body>
+</html>
